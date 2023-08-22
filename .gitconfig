@@ -1,0 +1,10 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = mattot-the-builder
+	email = 135392742+mattot-the-builder@users.noreply.github.com
+[pull]
+	ff = true
